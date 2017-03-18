@@ -6,9 +6,15 @@
 
 ![TRMM V7](https://disc.gsfc.nasa.gov/AIRS/images/3B42.20160229.7.png)
 ![cmorph](https://climatedataguide.ucar.edu/sites/default/files/styles/node_lightbox_display/public/key_figures/climate_data_set/CMORPH_1.png?itok=pKywo0zW)
+<<<<<<< HEAD
 ![GSmap](http://sharaku.eorc.jaxa.jp/GSMaP_crest/movie/GSMaP_MWR_monthly_anim.gif)
 ![PRESIANN](http://climatology.ir/wp-content/uploads/2014/07/latest_6h3.gif)
 ![IMERG](http://www.ncl.ucar.edu/Applications/Images/gpm_1_1_lg.png)
+=======
+|![GSmap](http://sharaku.eorc.jaxa.jp/GSMaP_crest/movie/GSMaP_MWR_monthly_anim.gif)
+|![PRESIANN](http://climatology.ir/wp-content/uploads/2014/07/latest_6h3.gif)
+|![IMERG](http://www.ncl.ucar.edu/Applications/Images/gpm_1_1_lg.png)
+>>>>>>> origin/master
 
 ***
 ## **1.常用列表**
