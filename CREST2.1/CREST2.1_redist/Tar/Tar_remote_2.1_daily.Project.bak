@@ -1,0 +1,123 @@
+###############################################################################
+# CREST Project File, Version						=			2.1.0
+###############################################################################
+# MODEL Temporal Information
+###############################################################################
+TimeMark					=			d	#d(day);h(hour);u(minute)
+TimeFormat				=			yyyymmddHH
+TimeStep					=			1
+StartDate					= 		2002010100
+NLoad					=			0 #Nload=0 regular simulation; NLoad>0, states variables are loaded at warmup dates
+WarmupDate				=			2002093100
+EndDate						= 		2013072400
+###############################################################################
+# MODEL Switchers
+###############################################################################
+RunStyle					=			simu # simu, cali_SCEUA, RealTime
+Feedback					=			No 	# routing feeds the LSM back
+hasRiverInterflow				=			No	#No: all interflow turns to surface flow in the river
+UseLAI				=			No		# compute the rainfall interception
+###############################################################################
+# MODEL Directories
+###############################################################################
+BasicFormat				=			.tif #any gdal supported formats
+BasicPath					=			"\\TRAJANVS\simulation\US_Basins\Tar\BASIC\"
+###############################################################################
+ParamPath					=			"\\TRAJANVS\simulation\US_Basins\Tar\Param\Parameters_nofeed_noRiverInterflow_02-05_simu.txt"
+ParamPath					=			"\\TRAJANVS\simulation\US_Basins\Tar\Param\Parameters_calib.txt"
+###############################################################################
+StatePath					=			"\\TRAJANVS\simulation\US_Basins\Tar\States\"
+###############################################################################
+ICSPath						=			"\\TRAJANVS\simulation\US_Basins\Tar\ICS\"
+###############################################################################
+# external rainfall settings 
+RainFormat				=			.24h.Z
+RainDateFormat				=			yyyymmddHH
+RainDateConv				=				End
+RainStart				=				2002010112
+RainDateInterval				=				0000000100
+RainPathExt					=			"\\TRAJANVS\data\mete_data\StageIV_daily\ST4."
+RainTsScaling				=			1
+# internal rainfall setting
+RainPathInt				=				"\\TRAJANVS\simulation\US_Basins\Tar\rains_daily\rain."
+###############################################################################
+PETFormat					=			.bil
+PETDateFormat				=			yymmdd
+PETDateConv				=				Begin
+PETStart			=			020101
+PETDateInterval			=			000001
+PETPathExt						=			"\\TRAJANVS\data\mete_data\PET_FEWS\et"
+PETTsScaling			=			100 # FEWS data has a 100 scaling factor: http://earlywarning.cr.usgs.gov/fews/global/web/readme.php?symbol=pt
+# internal PET setting
+PETPathInt			=			"\\TRAJANVS\simulation\US_Basins\Tar\PETs_daily\PET."
+################# LAI is not utilized in v2.1.0 yet. This part can be ignored in this version
+LAIFormat					=			_mosaic.tif
+LAIDateFormat				=			yyyy\DOY
+LAIStart			=			2006\001
+LAIDateInterval			=			0000\008
+LAIPathExt						=			"C:\data\LAI\Mosaic\"
+LAITsScaling			=			10 # LAI data has a 10 scaling factor and 255 is water body: http://glass-product.bnu.edu.cn/en
+LAIDateConv				=				Center/d/file/wendangziliao/suanfawendang/2014-03-13/GLASS%20LAI%E4%BA%A7%E5%93%81%E7%94%A8%E6%88%B7%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C_v1.1.pdf
+LAIPathInt						=			"C:\data\LAI\Mosaic\"
+LAIPathInt						=			"\\TRAJANVS\simulation\US_Basins\Tar\LAI_daily\"
+###############################################################################
+ResultPath				=			"\\TRAJANVS\simulation\US_Basins\Tar\result\"
+###############################################################################
+CalibPath					=			"\\TRAJANVS\simulation\US_Basins\Tar\Calib\"
+###############################################################################
+OBSDateFormat					=			yyyymmdd
+OBSPath						=			"\\TRAJANVS\simulation\US_Basins\Tar\OBS\"
+###############################################################################
+# The below data are optional. when RunStyle=cali_SCEUA, they can be omited
+###############################################################################
+#Outlet Information
+###############################################################################
+HasOutlet					=			yes
+OutletName				=			02083500	#02083500 the filename of observation
+OutletShpFile				=			02083500.shp  # the shapefile name
+###############################################################################
+#Grid Outputs
+###############################################################################
+GOVar_Rain				=			no
+GOVar_PET					=			no
+GOVar_EPot				=			no
+GOVar_EAct				=			no
+GOVar_W						=			no
+GOVar_SM					=			no
+GOVar_R						=			no
+GOVar_ExcS				=			no
+GOVar_ExcI				=			no
+GOVar_RS					=			no
+GOVar_RI					=			no
+###############################################################################
+# State to Save
+##############################################################################
+NumOfOutputDates	=			24 #0
+SaveDateFormat				=			"yyyymmddHHMM"
+DateOffset				=			000000000030
+OutputDate_1			=			2002100800
+OutputDate_2			=			2002120500
+OutputDate_3			=			2003012400
+OutputDate_4			=			2003031700
+OutputDate_5			=			2003040700
+OutputDate_6			=			2003050600
+OutputDate_7			=			2003060600
+OutputDate_8			=			2003080300
+OutputDate_9			=			2003091700
+OutputDate_10			=			2003120600
+OutputDate_11			=			2004081400
+OutputDate_12			=			2004083000
+OutputDate_13			=			2006061200
+OutputDate_14			=			2006082900
+OutputDate_15			=			2006110500
+OutputDate_16			=			2009022800
+OutputDate_17			=			2009031500
+OutputDate_18			=			2009102700
+OutputDate_19			=			2009120200
+OutputDate_20			=			2010011700
+OutputDate_21			=			2010032700
+OutputDate_22			=			2010091900
+OutputDate_23			=			2011082300
+OutputDate_24			=			2013060800
+###############################################################################
+WinRAR				=				"D:\System\winrar\App\WinRAR-x64\WinRAR.exe"
