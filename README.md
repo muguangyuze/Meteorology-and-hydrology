@@ -4,7 +4,7 @@
    Here you will find some information and acknowledge about study of Meteorology and hydrology.
    It's just my experience on my study road.
    So, may you love it.
-## **ABOUT yself**
+## **ABOUT Myself**
    I just a Graduate student of hydrology and water resource from Hohai University.
    I want change the awful condition about the Closed discipline environment.
    All of this is my dream.
