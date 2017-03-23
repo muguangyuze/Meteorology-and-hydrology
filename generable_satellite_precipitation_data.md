@@ -9,9 +9,6 @@
 ![GSmap](http://sharaku.eorc.jaxa.jp/GSMaP_crest/movie/GSMaP_MWR_monthly_anim.gif)
 ![PRESIANN](http://climatology.ir/wp-content/uploads/2014/07/latest_6h3.gif)
 ![IMERG](http://www.ncl.ucar.edu/Applications/Images/gpm_1_1_lg.png)
-![GSmap](http://sharaku.eorc.jaxa.jp/GSMaP_crest/movie/GSMaP_MWR_monthly_anim.gif)
-![PRESIANN](http://climatology.ir/wp-content/uploads/2014/07/latest_6h3.gif)
-![IMERG](http://www.ncl.ucar.edu/Applications/Images/gpm_1_1_lg.png)
 
 ***
 ## **1.常用列表**
@@ -144,6 +141,9 @@ end
     fclose(f); 
     ```
 
+
+'''
+
 ## **相关参考文献**
 [1]Funk C, Peterson P, Landsfeld M, et al. The climate hazards infrared precipitation with stations--a new environmental record for monitoring extremes[J]. Scientific data, 2015, 2: 150066.
 
@@ -161,4 +161,5 @@ end
 
 [8]Joseph R. CHOMPS: A new high resolution satellite derived precipitation data set for climate studies[C]//23rd Conference on Hydrology. 2009.
 
-[9]Brocca,  L.,  Ciabatta,  L.,  Massari,  C.,  Moramarco,  T.,  Hahn,  S.,  Hasenauer,  S.,  Kidd,  R.,  Dorigo,  W., Wagner,  W.,  Levizzani,  V.  (2014).  Soil  as  a  natural  rain  gauge:  estimating global  rainfall  from satellite  soil  moisture  data.  Journal  of  Geophysical  Research,  119(9),  5128-5141, doi:10.1002/2014JD021489. 
+[9]Brocca,  L.,  Ciabatta,  L.,  Massari,  C.,  Moramarco,  T.,  Hahn,  S.,  Hasenauer,  S.,  Kidd,  R.,  Dorigo,  W., Wagner,  W.,  Levizzani,  V.  (2014).  Soil  as  a  natural  rain  gauge:  estimating global  rainfall  from satellite  soil  moisture  data.  Journal  of  Geophysical  Research,  119(9),  5128-5141, doi:10.1002/2014JD021489.
+'''
